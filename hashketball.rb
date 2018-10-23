@@ -134,7 +134,7 @@ end
 
 def get_player(player)
   game_hash.each do |location, team_data|
-    team_data[:players].each do |game_player, stats|
+    team_data[:players].find do |game_player, stats|
       if game_player == player
        return player
       end

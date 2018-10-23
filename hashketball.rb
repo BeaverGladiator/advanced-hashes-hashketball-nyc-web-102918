@@ -145,7 +145,6 @@ end
 
 
 def num_points_scored(player)
-  points_scored = 0
   game_player = get_player(player)
   game_player[:points]
 end
